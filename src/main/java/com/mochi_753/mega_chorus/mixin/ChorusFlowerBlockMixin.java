@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Mixin(ChorusFlowerBlock.class)
+@Mixin(value = ChorusFlowerBlock.class)
 public class ChorusFlowerBlockMixin {
     @Inject(method = "randomTick", at = @At("TAIL"))
     private void onRandomTick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom, CallbackInfo ci) {

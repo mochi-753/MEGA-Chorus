@@ -1,0 +1,12 @@
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+build
+.gradle
+
+eclipse
+run
+run-data
